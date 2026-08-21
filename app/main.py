@@ -8,6 +8,9 @@ app = FastAPI(
 )
 
 
+
+
+
 class TaskCreate(BaseModel):
     """Dados recebidos para criar uma tarefa."""
 
