@@ -103,6 +103,7 @@ jobs:
     needs: [quality-and-tests, container-smoke-test]
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    environment: DES
 
     steps:
       - name: Checkout do código
